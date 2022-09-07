@@ -1,6 +1,7 @@
 package org.example.stock.dubbo;
 
 import io.seata.core.context.RootContext;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.config.annotation.Service;
 import org.example.common.dto.CommodityDTO;
 import org.example.common.dubbo.StockDubboService;
@@ -11,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.annotation.Resource;
 
-@Service
+@DubboService
 public class StockDubboServiceImpl implements StockDubboService {
 
     private Logger logger = LoggerFactory.getLogger(StockDubboServiceImpl.class);

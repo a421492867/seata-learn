@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.annotation.Resource;
 
-@Service
+@DubboService
 public class AccountDubboServiceImpl implements AccountDubboService {
 
     private Logger logger = LoggerFactory.getLogger(AccountDubboServiceImpl.class);
