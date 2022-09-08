@@ -1,8 +1,9 @@
 package org.example.common.dto;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class BusinessDTO {
+public class BusinessDTO implements Serializable {
 
     private String userId;
 

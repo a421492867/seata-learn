@@ -1,8 +1,9 @@
 package org.example.common.dto;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class OrderDTO {
+public class OrderDTO implements Serializable {
 
     private String orderNo;
 

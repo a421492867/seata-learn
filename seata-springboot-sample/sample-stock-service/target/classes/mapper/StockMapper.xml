@@ -4,6 +4,6 @@
     <update id="decreaseStock">
         update t_stock
         set count = count - ${count}
-        where commodity_code = #{commodityCode}
+        where commodity_code = #{commodityCode} and count > ${count}
     </update>
 </mapper>
