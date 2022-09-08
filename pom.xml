@@ -18,6 +18,7 @@
     <modules>
         <module>seata-springboot-sample</module>
         <module>sample-common</module>
+        <module>tcc-sample</module>
     </modules>
 
     <properties>

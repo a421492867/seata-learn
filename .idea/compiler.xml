@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sample-account-service" />
+        <module name="tcc-to-service" />
         <module name="sample-business-service" />
         <module name="sample-common" />
-        <module name="sample-stock-service" />
         <module name="sample-order-service" />
+        <module name="tcc-from-service" />
+        <module name="sample-account-service" />
+        <module name="sample-stock-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +24,9 @@
       <module name="sample-order-service" options="-parameters" />
       <module name="sample-stock-service" options="-parameters" />
       <module name="seata-springboot-sample" options="-parameters" />
+      <module name="tcc-from-service" options="-parameters" />
+      <module name="tcc-sample" options="-parameters" />
+      <module name="tcc-to-service" options="-parameters" />
     </option>
   </component>
 </project>

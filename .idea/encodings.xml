@@ -11,5 +11,9 @@
     <file url="file://$PROJECT_DIR$/seata-springboot-sample/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tcc-sample/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tcc-sample/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tcc-sample/tcc-from-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tcc-sample/tcc-to-service/src/main/java" charset="UTF-8" />
   </component>
 </project>
