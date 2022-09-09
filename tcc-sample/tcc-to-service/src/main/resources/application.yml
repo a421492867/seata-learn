@@ -1,5 +1,5 @@
 server:
-  port: 8110
+  port: 8111
 
 spring:
   datasource:
@@ -8,11 +8,11 @@ spring:
     username: root
     password: root
   application:
-    name: sample-tcc-from
+    name: sample-tcc-to
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
-  type-aliases-package: org.example.from.entity
+  type-aliases-package: org.example.to.entity
   configuration:
     map-underscore-to-camel-case: true
     global-config:
@@ -26,12 +26,12 @@ dubbo:
     name: dubbo
     port: -1
   scan:
-    base-packages: org.example.from.dubbo
+    base-packages: org.example.to.dubbo
   registry:
     address: nacos://127.0.0.1:8848
 
 seata:
-  application-id: sample-tcc-from
+  application-id: sample-tcc-to
   tx-service-group: sample-seata-group
   client:
     rm:
