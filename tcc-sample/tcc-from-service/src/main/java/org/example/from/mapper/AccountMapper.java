@@ -10,4 +10,6 @@ public interface AccountMapper extends BaseMapper<Account> {
 
     Account getAccountForUpdate(@Param("accountNo") String accountNo);
 
+    void updateAccount(Account account);
+
 }

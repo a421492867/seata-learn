@@ -35,7 +35,7 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> {
 
                 double freezedAmount = account.getFreezedAmount() + amount;
                 account.setFreezedAmount(freezedAmount);
-                baseMapper.updateById(account);
+                baseMapper.updateAccount(account);
                 logger.info("prepare account {}, amount {}, dtc transaction id : {}", accountNo, amount,
                         xid);
                 return true;
@@ -64,7 +64,7 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> {
                 }
                 account.setAmount(newAmount);
                 account.setFreezedAmount(account.getFreezedAmount() - amount);
-                baseMapper.updateById(account);
+                baseMapper.updateAccount(account);
                 logger.info("commit account {}  amount {}, dtx transaction id : {}", accountNo, amount, xid);
                 return true;
             }catch (Exception e){

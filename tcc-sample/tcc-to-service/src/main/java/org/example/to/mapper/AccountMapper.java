@@ -9,4 +9,6 @@ import org.example.to.entity.Account;
 public interface AccountMapper extends BaseMapper<Account> {
 
     Account getAccountForUpdate(@Param("accountNo") String accountNo);
+
+    void updateAccount(Account account);
 }

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="org.example.to.mapper.AccountMapper">
+    <update id="updateAccount">
+        update account
+        set amount=#{amount},
+            freezed_amount=#{freezedAmount}
+        where account_no = #{accountNo}
+    </update>
     <select id="getAccountForUpdate" resultType="org.example.to.entity.Account">
         select * from account where account_no = #{accountNo}
     </select>

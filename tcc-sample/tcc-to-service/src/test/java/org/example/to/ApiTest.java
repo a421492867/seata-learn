@@ -33,12 +33,16 @@ public class ApiTest {
         String from  = "A", to = "B";
         double amount = 120;
 
-        boolean res = fromDubboService.prepare(null, from, amount);
+        String xid = RootContext.getXID();
+        BusinessActionContext actionContext = new BusinessActionContext();
+        actionContext.setXid(xid);
+
+        boolean res = fromDubboService.prepare(actionContext, from, amount);
         if(!res){
             throw new RuntimeException(from + "预扣款失败");
         }
 
-        res = toDubboService.prepare(null, to, amount);
+        res = toDubboService.prepare(actionContext, to, amount);
         if(!res){
             throw new RuntimeException(to + "预收款失败");
         }
